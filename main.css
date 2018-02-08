@@ -1,6 +1,26 @@
 body {
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 35px;
+}
+
+.wrap {
+  height: 100%;
+  overflow: auto;
+}
+
+#patients {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+
+#clinicians {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+
+#about {
+  padding-top: 50px;
+  margin-top: -50px;
 }
 
 .back-to-top {
@@ -8,6 +28,7 @@ body {
   position: fixed;
   bottom: 50px;
   right: 50px;
+  z-index: 5;
 }
 
 .top-buffer {
