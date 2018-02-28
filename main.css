@@ -8,14 +8,26 @@ body {
   overflow: auto;
 }
 
+.jumbotron{
+  margin-bottom:0;
+}
+
+#welcome {
+  background-color: #91e1e2;
+  margin-bottom:0;
+  padding-bottom: 20px;
+}
+
 #patients {
   padding-top: 50px;
   margin-top: -50px;
+  margin-bottom:0;
 }
 
 #clinicians {
   padding-top: 50px;
   margin-top: -50px;
+  margin-bottom:0;
 }
 
 #about {
