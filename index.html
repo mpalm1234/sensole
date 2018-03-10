@@ -20,12 +20,6 @@
 
     <link rel="stylesheet" href="main.css">
 
-    <script>
-      var shiftWindow = function() { scrollBy(0, -50) };
-      window.addEventListener("hashchange", shiftWindow);
-      function load() { if (window.location.hash) shiftWindow(); }
-    </script>
-
   </head>
 
   <body data-spy="scroll" data-target=".navbar" data-offset="50" onload="load()">
@@ -99,8 +93,18 @@
         <h3>You're taking charge of your healthcare.</h3>
 
         <h4>Why Sensole?</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>
+          Currently, patients who suffer from neurological diseases impacting gait
+          such as parkinsons, are subject to objective procedures in the tracking
+          of the disease. One common procedure is the Time Up and Go test (TUG)
+          where doctor's translate results into levodopa prescriptions and physical
+          therapy regimens, usually having to be adjusted through trial and error
+          to find what works best for the patient. <br>
+
+          At Sensole we believe with our technology we can provide in depth gait
+          monitoring which can then analyze to provide actionable metrics that
+          clinicians can use to understand how their patient is doing at any given time.
+        </p>
 
         <h4>How to use:</h4>
         <ol>
@@ -299,7 +303,7 @@
 
         <!-- Email Signup -->
         <form action="action_page.php">
-          <h2>Keep in Touch!</h2>
+          <h3>Keep in Touch!</h3>
           <label><b>Email:</b></label>
           <input type="text" placeholder="Enter Email" name="email" required>
           <button type="submit" class="signupbtn">Sign Up</button>
@@ -308,7 +312,7 @@
       </div>
     </section>
 
-    
+
     <!-- Footer -->
     <footer class="page-footer light-blue text-center navbar-fixed-bottom navbar-default">
       <div class="container">
