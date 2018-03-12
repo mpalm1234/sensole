@@ -8,22 +8,22 @@ body {
 }
 
 #welcome {
-  margin-bottom:0;
+  /* background-color: #FFFFFF; */
   padding-bottom: 20px;
 }
 
 #patients {
-  background-color: #91e1e2;
+  /* background-color: #91e1e2; */
   padding-bottom: 20px;
 }
 
 #clinicians {
-  background-color: #FFFFFF;
+  /* background-color: #FFFFFF; */
   padding-bottom: 20px;
 }
 
 #about {
-  background-color: #91e1e2;
+  /* background-color: #91e1e2; */
   padding-bottom: 20px;
 }
 
