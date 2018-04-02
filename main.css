@@ -5,25 +5,28 @@ body {
 
 .jumbotron{
   margin-bottom:0;
+  background-size: cover;
+  min-height: 600px;
 }
 
 #welcome {
-  /* background-color: #FFFFFF; */
+  background-color: #FFFFFF;
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 
 #patients {
-  /* background-color: #91e1e2; */
+  background-color: #dadada;
   padding-bottom: 20px;
 }
 
 #clinicians {
-  /* background-color: #FFFFFF; */
+  background-color: #FFFFFF;
   padding-bottom: 20px;
 }
 
 #about {
-  /* background-color: #91e1e2; */
+  background-color: #dadada;
   padding-bottom: 20px;
 }
 
