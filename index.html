@@ -1,46 +1,37 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sensole</title>
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-    crossorigin="anonymous">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sensole</title>
 
-    <!-- Optional theme -->
-    <link rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-    crossorigin="anonymous">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
 
-    <link rel="stylesheet" href="main.css">
+</head>
 
-  </head>
+<body>
+  <!--data-spy="scroll" data-target=".navbar" data-offset="50" onload="load()"-->
 
-  <body data-spy="scroll" data-target=".navbar" data-offset="50" onload="load()">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+  <!-- Navigation -->
+  <!-- <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <!-- Button that appears when window is shrunk to certain size -->
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#items">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <!-- Logo -->
-          <a class="navbar-brand" href="./index.html">
+=          <a class="navbar-brand" href="./index.html">
       	  	<img src="./Sensole-Logo-Gif.gif" height="100%" alt="">
       	  </a>
         </div>
-        <!-- Tabs -->
         <div class="collapse navbar-collapse" id="items">
           <ul class="nav navbar-nav">
             <li><a href="#patients">Patients</a></li>
@@ -49,286 +40,264 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </nav> -->
 
-    <!-- Back to top button -->
-    <div class="container">
-      <a href="#" class="back-to-top">
-        <span class="btn btn-lg btn-info glyphicon glyphicon-chevron-up"></span>
-      </a>
-    </div>
-
-    <!-- Jumbotron -->
-    <div class="jumbotron">
+  <!-- Jumbotron -->
+  <!-- <div class="jumbotron">
       <div class="container text-center">
         <h1>Sensole</h1>
         <p>more affordable, portable, and intuitive gait monitoring</p>
       </div>
-    </div>
+    </div> -->
+
+  <div class="container">
+    <nav id="web-nav">
+      <a href="./index.html">
+          <img class="logo" src="./Sensole-Logo-Gif.gif">
+        </a>
+      <ul id="menu">
+        <li><a href="#patients" class="option">Patients</a></li>
+        <li><a href="#clinicians" class="option">Clinicians</a></li>
+        <li><a href="#about" class="option">About Us</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="content">
+    <section id="highlight-content">
+      <h1>Sensole</h1>
+      <p>more affordable, portable, and intuitive gait monitoring</p>
+    </section>
 
     <!-- Welcome -->
     <section id="welcome">
-      <div class="container text-center">
-        <h1>Welcome!</h1>
-        <p>
-          Sensole is an insole biometric monitoring device for Parkinson’s
-          patients that acts as both a bridge between the doctor’s office and a
-          patient’s daily activities, and as a research tool to further understand
-          potential diagnosis patterns and disease progression.  At the same time,
-          Sensole empowers patients to take part in their own healthcare.
-        </p>
 
-        <h2>How can we help you?</h2>
-        <a href="#patients" class="whoAmI btn btn-lg btn-info">I am a Patient</a>
-        <a href="#clinicians" class="whoAmI btn btn-lg btn-info">I am a Clinician</a>
+      <h1>Welcome!</h1>
+      <p>
+        Sensole is an insole biometric monitoring device for Parkinson’s patients that acts as both a bridge between the doctor’s office and a patient’s daily activities, and as a research tool to further understand potential diagnosis patterns and disease progression.
+        At the same time, Sensole empowers patients to take part in their own healthcare.
+      </p>
 
-      </div>
+      <h2>How can we help you?</h2>
+      <a href="#patients" class="option btn btn-lg btn-info">I am a Patient</a>
+      <a href="#clinicians" class="option btn btn-lg btn-info">I am a Clinician</a>
+
     </section>
-
 
     <!-- Patients -->
     <section id="patients">
-      <div class="container">
-        <h2>Patients</h2>
-        <h3>You're taking charge of your healthcare.</h3>
 
-        <h4>Why Sensole?</h4>
-        <p>
-          Currently, patients who suffer from neurological diseases impacting gait
-          such as parkinsons, are subject to objective procedures in the tracking
-          of the disease. One common procedure is the Time Up and Go test (TUG)
-          where doctor's translate results into levodopa prescriptions and physical
-          therapy regimens, usually having to be adjusted through trial and error
-          to find what works best for the patient. <br>
+      <h2>Patients</h2>
+      <h3>You're taking charge of your healthcare.</h3>
 
-          At Sensole we believe with our technology we can provide in depth gait
-          monitoring which can then analyze to provide actionable metrics that
-          clinicians can use to understand how their patient is doing at any given time.
-        </p>
+      <h4>Why Sensole?</h4>
+      <p>
+        Currently, patients who suffer from neurological diseases impacting gait such as parkinsons, are subject to objective procedures in the tracking of the disease. One common procedure is the Time Up and Go test (TUG) where doctor's translate results into
+        levodopa prescriptions and physical therapy regimens, usually having to be adjusted through trial and error to find what works best for the patient. <br> At Sensole we believe with our technology we can provide in depth gait monitoring
+        which can then analyze to provide actionable metrics that clinicians can use to understand how their patient is doing at any given time.
+      </p>
 
-        <h4>How to use:</h4>
-        <ol>
-          <li>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim
-          </li>
-          <li>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </li>
-          <li>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </li>
-        </ol>
+      <h4>How to use:</h4>
+      <ol>
+        <li>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        </li>
+        <li>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </li>
+        <li>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </li>
+      </ol>
 
-        <!--
-        <div align="center">
-          <video height="300px" width="500px" controls autostart="false">
-            <source src="./placeholder-video.mp4" type="video/mp4">
-          </video>
-        </div>
-      -->
-
-      </div>
+      <!--
+          <div align="center">
+            <video height="300px" width="500px" controls autostart="false">
+              <source src="./placeholder-video.mp4" type="video/mp4">
+            </video>
+          </div>
+        -->
     </section>
 
     <!--Clinicians-->
     <section id="clinicians">
-      <div class="container">
-        <h2>Clinicians</h2>
-        <h3>Who are we?</h3>
-        <p>
-          Sensole is a product spawned by UD researchers who lacked a way to
-          collect accurate and natural gait data from Parkinson’s patients they
-          were studying. Once the idea was formed the founders worked with the
-          University of Delaware’s Office of Economic Innovation and
-          Partnerships program to create a team of Undergraduate students to
-          bring our idea it fruition. After countless exploration, prototypes,
-          and testing we are now running clinical trials validating Sensoles
-          unique value.
-        </p>
-        <h3>Our Technology</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat
-          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-          in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <h3>Research</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat
-          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-          in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
 
-        <!--
-        <div align="center">
-          <video height="300px" width="500px" controls autostart="false">
-            <source src="./placeholder-video.mp4" type="video/mp4">
-          </video>
-        </div>
-        -->
+      <h2>Clinicians</h2>
+      <h3>Who are we?</h3>
+      <p>
+        Sensole is a product spawned by UD researchers who lacked a way to collect accurate and natural gait data from Parkinson’s patients they were studying. Once the idea was formed the founders worked with the University of Delaware’s Office of Economic Innovation
+        and Partnerships program to create a team of Undergraduate students to bring our idea it fruition. After countless exploration, prototypes, and testing we are now running clinical trials validating Sensoles unique value.
+      </p>
+      <h3>Our Technology</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <h3>Research</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
 
-      </div>
+      <!--
+          <div align="center">
+            <video height="300px" width="500px" controls autostart="false">
+              <source src="./placeholder-video.mp4" type="video/mp4">
+            </video>
+          </div>
+          -->
+
     </section>
 
     <!-- About Us-->
     <section id="about">
-      <div class="container">
-        <h2>About Us</h2>
+      <h2>About Us</h2>
+      <h3>Our Board Of Directors</h3>
 
-        <h3>Our Board Of Directors</h3>
-
-        <div class="row">
-          <div class="col-md-4">
-            <div class="hovereffect">
-              <img class="img-circle center-block img-responsive" src="./images/litherland.png" width=230px>
-              <div class="overlay">
-                 <p class="info">Theresa Litherland</p>
-              </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="hovereffect">
+            <img class="img-circle center-block img-responsive" src="./images/litherland.png" width=230px>
+            <div class="overlay">
+              <p class="info">Theresa Litherland</p>
             </div>
-            <!--<img class="img-circle center-block" src="./images/litherland.png" width=230px>-->
-            <!--
-            <h4>Theresa Litherland, MBA</h4>
-            <p>
-              A healthcare innovator with experience in patient centered
-              design, digital marketing, connected medical devices, innovative
-              pharmaceutical packaging.   Theresa has always been motivated by
-              the challenge of developing solutions that improve life for patients.
-            </p>
-            -->
           </div>
-
-
-          <div class="col-md-4">
-            <div class="hovereffect">
-              <img class="img-circle center-block img-responsive" src="./images/pretzer.png" width=230px>
-              <div class="overlay">
-                 <p class="info">Ingrid Pretzer-Aboff</p>
-              </div>
-            </div>
-            <!--
-            <h4>Ingrid Pretzer-Aboff BSN, MA, PhD</h4>
-            <p>
-              Dr. Pretzer-Aboff has dedicated 30 years to working with
-              Parkinson's patients.  She is well known in Parkinson's research
-              community with over 30 peer-reviewed publications.  She is the
-              co-founder and director of the University of Delaware
-              Parkinson's Clinic, that provides a new model of team care and
-              services for Parkinson's patients.  She is Associate Professor
-              in the School of Nursing at the University of Delaware and is an
-              educator for the Parkinson's Disease Foundation.  She is the
-              first awardee of the Edmund J Safra Visiting Nurse Faculty Program.
-            </p>
-            -->
-          </div>
-          <div class="col-md-4">
-            <div class="hovereffect">
-              <img class="img-circle center-block img-responsive" src="./images/chase.png" width=230px>
-              <div class="overlay">
-                 <p class="info">Bruce Chase</p>
-              </div>
-            </div>
-            <!--
-            <h4>Bruce Chase, PhD</h4>
-            <p>
-              Dr. Bruce Chase, Principle Investigator, Engineering Professor
-              and DuPont Fellow.
-            </p>
-            -->
-          </div>
+          <!--<img class="img-circle center-block" src="./images/litherland.png" width=230px>-->
+          <!--
+              <h4>Theresa Litherland, MBA</h4>
+              <p>
+                A healthcare innovator with experience in patient centered
+                design, digital marketing, connected medical devices, innovative
+                pharmaceutical packaging.   Theresa has always been motivated by
+                the challenge of developing solutions that improve life for patients.
+              </p>
+              -->
         </div>
-        <br>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="hovereffect">
-              <img class="img-circle center-block img-responsive" src="./images/rabolt.png" width=230px>
-              <div class="overlay">
-                 <p class="info">John Rabolt</p>
-              </div>
+
+        <div class="col-md-4">
+          <div class="hovereffect">
+            <img class="img-circle center-block img-responsive" src="./images/pretzer.png" width=230px>
+            <div class="overlay">
+              <p class="info">Ingrid Pretzer-Aboff</p>
             </div>
-            <!--
-            <h4>John Rabolt, PhD</h4>
-            <p>
-              Department Chair, Materials Science, UD.  IBM researcher, Founder
-              PAIR Tech
-            </p>
-            -->
           </div>
-          <div class="col-md-4">
-            <div class="hovereffect">
-              <img class="img-circle center-block img-responsive" src="./images/jones.png" width=230px>
-              <div class="overlay">
-                 <p class="info">Scott Jones</p>
-              </div>
-            </div>
-            <!--
-            <h4>Scott Jones, PhD</h4>
-            <p>
-              Dept. Chair, UD Accounting, Chair, Delaware Innovation Fund,
-              Founder, PAIR Tech
-            </p>
-            -->
-          </div>
-          <div class="col-md-4">
-            <div class="hovereffect">
-              <img class="img-circle center-block img-responsive" src="./images/sreekanth.png" width=230px>
-              <div class="overlay">
-                 <p class="info">Param Sreekanth</p>
-              </div>
-            </div>
-            <!--
-            <h4>Param Sreekanth, MBA</h4>
-            <p>
-              Param has significant previous experience with new venture
-              development and business strategy.  He had a very successful
-              career as a DuPont Merger and Acquisitions expert.  Param is
-              dedicated to delivering innovative solutions in healthcare.
-            </p>
-            -->
-          </div>
+          <!--
+              <h4>Ingrid Pretzer-Aboff BSN, MA, PhD</h4>
+              <p>
+                Dr. Pretzer-Aboff has dedicated 30 years to working with
+                Parkinson's patients.  She is well known in Parkinson's research
+                community with over 30 peer-reviewed publications.  She is the
+                co-founder and director of the University of Delaware
+                Parkinson's Clinic, that provides a new model of team care and
+                services for Parkinson's patients.  She is Associate Professor
+                in the School of Nursing at the University of Delaware and is an
+                educator for the Parkinson's Disease Foundation.  She is the
+                first awardee of the Edmund J Safra Visiting Nurse Faculty Program.
+              </p>
+              -->
         </div>
-        <br>
-
-        <!-- Email Signup -->
-        <form action="action_page.php">
-          <h3>Keep in Touch!</h3>
-          <label><b>Email:</b></label>
-          <input type="text" placeholder="Enter Email" name="email" required>
-          <button type="submit" class="signupbtn">Sign Up</button>
-        </form>
-
+        <div class="col-md-4">
+          <div class="hovereffect">
+            <img class="img-circle center-block img-responsive" src="./images/chase.png" width=230px>
+            <div class="overlay">
+              <p class="info">Bruce Chase</p>
+            </div>
+          </div>
+          <!--
+              <h4>Bruce Chase, PhD</h4>
+              <p>
+                Dr. Bruce Chase, Principle Investigator, Engineering Professor
+                and DuPont Fellow.
+              </p>
+              -->
+        </div>
       </div>
+      <br>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="hovereffect">
+            <img class="img-circle center-block img-responsive" src="./images/rabolt.png" width=230px>
+            <div class="overlay">
+              <p class="info">John Rabolt</p>
+            </div>
+          </div>
+          <!--
+              <h4>John Rabolt, PhD</h4>
+              <p>
+                Department Chair, Materials Science, UD.  IBM researcher, Founder
+                PAIR Tech
+              </p>
+              -->
+        </div>
+        <div class="col-md-4">
+          <div class="hovereffect">
+            <img class="img-circle center-block img-responsive" src="./images/jones.png" width=230px>
+            <div class="overlay">
+              <p class="info">Scott Jones</p>
+            </div>
+          </div>
+          <!--
+              <h4>Scott Jones, PhD</h4>
+              <p>
+                Dept. Chair, UD Accounting, Chair, Delaware Innovation Fund,
+                Founder, PAIR Tech
+              </p>
+              -->
+        </div>
+        <div class="col-md-4">
+          <div class="hovereffect">
+            <img class="img-circle center-block img-responsive" src="./images/sreekanth.png" width=230px>
+            <div class="overlay">
+              <p class="info">Param Sreekanth</p>
+            </div>
+          </div>
+          <!--
+              <h4>Param Sreekanth, MBA</h4>
+              <p>
+                Param has significant previous experience with new venture
+                development and business strategy.  He had a very successful
+                career as a DuPont Merger and Acquisitions expert.  Param is
+                dedicated to delivering innovative solutions in healthcare.
+              </p>
+              -->
+        </div>
+      </div>
+      <br>
+
+      <!-- Email Signup -->
+      <form action="action_page.php">
+        <h3>Keep in Touch!</h3>
+        <label><b>Email:</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </form>
+
     </section>
 
+  </div>
 
-    <!-- Footer -->
-    <footer class="page-footer text-center navbar-fixed-bottom navbar-inverse">
+  <!-- Back to top button -->
+  <div class="container">
+    <a href="#" class="back-to-top">
+        <span class="btn btn-lg btn-info glyphicon glyphicon-chevron-up"></span>
+      </a>
+  </div>
+
+
+  <!-- Footer -->
+  <!-- <footer class="page-footer text-center navbar-fixed-bottom navbar-inverse">
       <div class="container">
         <h5>Sensole</h5>
       </div>
-    </footer>
+    </footer> -->
 
 
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="global.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="global.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-  </body>
-
-
+</body>
 
 </html>

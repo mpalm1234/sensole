@@ -1,24 +1,14 @@
 
 
-// Navbar -- smooth scrolling
-function scrollNav() {
-  $('.nav a').click(function(){             // apply to each button in navbar
+// Smooth scrolling
+function smoothScroll() {
+  $('.option').click(function(){                           // use "option" class
     $('html, body').animate({
        scrollTop: $( $(this).attr('href') ).offset().top   // scroll to the href of button we clicked
     }, 400);                                               // speed
   });
 }
-scrollNav();
-
-// Patient/Clinician Buttons -- smooth scrolling
-function scrollButton() {
-  $('.whoAmI').click(function(){             // apply to each button in navbar
-    $('html, body').animate({
-       scrollTop: $( $(this).attr('href') ).offset().top   // scroll to the href of button we clicked
-    }, 400);                                               // speed
-  });
-}
-scrollButton();
+smoothScroll();
 
 // Back To Top button
 $(document).ready(function() {

@@ -1,33 +1,73 @@
-body {
+/* body {
   margin-top: 50px;
   padding-bottom: 35px;
-}
+} */
 
-.jumbotron{
+/* .jumbotron{
   margin-bottom:0;
   background-size: cover;
   min-height: 600px;
+} */
+
+#web-nav {
+  width: 20%;
+  background: black;
+  opacity: 0.5;
+  overflow: auto;
+  float: left;
+  z-index: 20;
+  position: fixed;
+  left: 0px;
+  min-height: 800px;
+}
+
+#web-nav img.logo {
+  margin: 70px auto 85px auto;
+  display: block;
+  width: 80px;
+  height: auto;
+}
+
+#web-nav #menu {
+  color: #FFFFFF;
+  text-align: right;
+  list-style-type: none;
+  margin-right: 40px;
+}
+
+.content {
+  float: right;
+  width: 80%;
+}
+
+#highlight-content {
+  background-color: #dadada;
+  color: black;
+  text-align: center;
+  min-height: 650px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 #welcome {
   background-color: #FFFFFF;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 10px 50px 20px 50px;
+
 }
 
 #patients {
   background-color: #dadada;
-  padding-bottom: 20px;
+  padding: 10px 50px 20px 50px;
 }
 
 #clinicians {
   background-color: #FFFFFF;
-  padding-bottom: 20px;
+  padding: 10px 50px 20px 50px;
 }
 
 #about {
   background-color: #dadada;
-  padding-bottom: 20px;
+  padding: 10px 50px 20px 50px;
 }
 
 .back-to-top {
