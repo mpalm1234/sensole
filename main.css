@@ -24,7 +24,7 @@
 #web-nav img.logo {
   margin: 70px auto 85px auto;
   display: block;
-  width: 80px;
+  width: 150px;
   height: auto;
 }
 
@@ -32,7 +32,13 @@
   color: #FFFFFF;
   text-align: right;
   list-style-type: none;
-  margin-right: 40px;
+  padding-top: 50px;
+  margin-right: 25px;
+}
+
+#web-nav #menu a {
+  text-transform: uppercase;
+  font-size: 30px;
 }
 
 .content {
@@ -40,19 +46,19 @@
   width: 80%;
 }
 
-#highlight-content {
+#title-section {
   background-color: #dadada;
   color: black;
   text-align: center;
   min-height: 650px;
   padding-left: 50px;
   padding-right: 50px;
+  padding-top: 25%;
 }
 
 #welcome {
   background-color: #FFFFFF;
-  padding: 10px 50px 20px 50px;
-
+  padding: 0px 50px 20px 50px;
 }
 
 #patients {
@@ -76,10 +82,6 @@
   bottom: 50px;
   right: 50px;
   z-index: 5;
-}
-
-.top-buffer {
-  margin-top: 20px;
 }
 
 .img-circle {
