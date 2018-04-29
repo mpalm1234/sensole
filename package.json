@@ -1,0 +1,22 @@
+{
+  "name": "sensole",
+  "version": "1.0.0",
+  "description": "Sensole Website",
+  "main": "global.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mpalm1234/sensole.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mpalm1234/sensole/issues"
+  },
+  "homepage": "https://github.com/mpalm1234/sensole#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}
